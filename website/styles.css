@@ -1,0 +1,71 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Bebas";
+  src: url(BebasNeue-Regular.woff);
+  font-style: normal;
+  font-weight: 100;
+}
+
+/* Body styles */
+body {
+  color: gold;
+  background-color: dodgerblue;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+/* Table styles */
+table {
+  color: rgb(255, 4, 4);
+  background: linear-gradient(to bottom, rgb(0, 252, 29), gold);
+  border: 5px solid silver;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+
+/* Box styles */
+.box {
+  width: 150px;
+  height: 150px;
+  background: rgb(255, 105, 130);
+  transition-duration: 2s;
+}
+
+.box:hover {
+  background: rgb(255, 255, 255);
+  transform: rotate(361deg);
+}
+
+/* Header styles */
+header {
+  text-shadow: 2px 2px purple;
+}
+
+/* Footer styles */
+footer {
+  color: gold;
+}
+
+/* Link styles */
+a:link {
+  color: limegreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 16, 63);
+  background-color: transparent;
+  text-decoration: underline;
+}

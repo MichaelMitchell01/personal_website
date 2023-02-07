@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Work Bio</title>
+    <meta charset="utf-8" />
+    <img src="work_selfie.jpg" width="200" height="200" />
+    <a href="Index.html">Main Page</a>
+    <a href="my_academic_history.html">My Academic History</a>
+  </head>
+
+  <section class="pagecontent">
+    <p>
+      First and foremost, my résumé.
+      <script>
+        let ul = document.createElement("ul");
+        let li = document.createElement("li");
+        li.addEventListener("click",function() {
+          alert(this.innerText);
+        });
+        let liText = document.createTextNode("Subject to change.");
+        li.appendChild(liText);
+        ul.appendChild(li);
+        document.body.appendChild(ul);
+      </script>
+      <button onclick="location.href='michael_mitchell_resume.pdf';">
+        Download
+      </button>
+    </p>
+
+    <p>Summary of my work history:</p>
+    <table>
+      <tr>
+        <th>Position</th>
+        <th>Company</th>
+        <th>Tenure</th>
+      </tr>
+      <tr>
+        <td>IT Help Desk Technician</td>
+        <td>Accounting Intern</td>
+        <td>Administrative Assistant Intern</td>
+      </tr>
+      <tr>
+        <td>State University of New York College at Buffalo</td>
+        <td>Key Digital Systems</td>
+        <td>ASubpoena</td>
+      </tr>
+      <tr>
+        <td>August 2021 - Present</td>
+        <td>July 2020 - November 2020</td>
+        <td>August 2019</td>
+      </tr>
+    </table>
+    <p>
+      <a href="https://www.linkedin.com/in/michaelm410/">My LinkedIn </a>
+    </p>
+    <p>
+      <img src= "crestron_logo.webp"
+      style="float:right;width:42px;height:42px;"/>
+      <a href="https://www.github.com/MichaelMitchell01">My GitHub (For potential future projects)
+      </a>
+    </p>
+    <p>
+      <img src= "crestron_logo.webp"
+      style="float:right;width:42px;height:42px;"/>
+      <video width="320" height="260" controls>
+        <source src="sitevid.mp4" type="video/mp4" />
+      </video>
+    </p>
+    <p>
+      For business inquiries, or any questions, comments, or concerns, contact
+      me at
+      <a href="mailto:mbmitchell410@gmail.com"> mbmitchell410@gmail.com </a>
+    </p>
+  </section>
+  <footer>Copyright &copy; Michael Brendan Mitchell, 2022</footer>
+  <div id="current_date"></p>
+    <!--Anonymous function-->
+    <script>
+      var anon = function() {
+  alert('This is only the beginning!');
+}
+anon();
+    document.getElementById("current_date").innerHTML = Date();
+    </script>
+</html>

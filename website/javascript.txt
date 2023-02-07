@@ -1,0 +1,6 @@
+window.alert(
+  "This page is under construction. More updates will be posted as they come."
+);
+
+/* Event Listener */
+body.addEventListener();

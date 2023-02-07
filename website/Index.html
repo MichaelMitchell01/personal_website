@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>My personal website.</title>
+    <meta charset="utf-8" />
+    <meta name="keywords"content="personal, website, career, Mitchell, Michael"/>
+
+    <h1>
+      Hello. Welcome to my personal webpage.</h1>
+
+    <h2>
+      Through this site, you are able to gain an overview of my professional and
+      educational background.
+    </h2>
+    <h3>
+      Fill out the form below to subscribe to my mailing list and find out about
+      my upcoming projects.
+    </h3>
+    <form id="contact" method="POST" action="https://bscacad3.buffalostate.edu/~nageles/form.php">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="phone">Phone:</label><br />
+      <input type="text" id="phone" name="phone" required /><br />
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" require />
+      <input type="checkbox" id="Xtras" name="Extra" value="Extra" />
+      <label for="Extra"> I want insider updates</label><br />
+      <input type="checkbox" id="not" name="not" value="not"/>
+      <label for="not"> I do NOT want insider updates, only periodic.</label><br />
+      <input type="radio" id="cellphone" name="cell_phone" value="CellPhone" required />
+      <label for="cellphone">Cell Phone</label>
+      <input type="radio" id="other" name="other" value="other" required />
+      <label for="other">Other</label>
+      <input type="submit" value="Submit" />
+    </form>
+  </head>
+
+  <body>
+    <header>
+      <audio controls>
+        <source src="darkindustrialtrailer.mp3" type="audio/mp3" />
+      </audio>
+      <a href="work_links.html">My Work Bio</a>
+      <a href="my_academic_history.html">My Academic History</a>
+    </header>
+
+    <footer>Copyright &copy; Michael Brendan Mitchell, 2022</footer>
+  </body>
+  <div id="current_date"></p>
+    <!--Current date & time-->
+    <script>
+    document.getElementById("current_date").innerHTML = Date();
+    </script>
+</html>
